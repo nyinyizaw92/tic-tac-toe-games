@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='description' content='A simple game, written in simple javascript.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='application-name' content='Tic Tac Toe Game'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='apple-mobile-web-app-title' content='Tic Tac Toe Game'>
+    <link rel='icon' sizes='192x192' href='/images/touch/logo_192.png'>
+    <link rel='apple-touch-icon' href='/images/touch/logo_192.png'>
+    <meta name='msapplication-TileImage' content='/images/touch/logo_144.png'>
+    <meta name='msapplication-TileColor' content='#2196F3'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <style type="text/css">
+
+        body{
+            background-color:#90caee;
+           
+            opacity: 0.2px;
+        }
+        .container{
+            text-align: center;
+            color:black;
+            padding:25px;
+            font-size:25px;
+        }
+
+       
+        input:hover{
+            background-color:#;
+
+        }
+    </style>
+</head>
+
+<body>    
+
+    <div id="registerView" class="container">
+        <h1 style="font-family: 'Pacifico', cursive;font-family: 'Lobster', cursive;color:black;font-size:60px"><i>Tic Tac Toe</i></h1>
+        <label>
+            Player 1: <input id="player1Name"  />
+        </label><br>
+        <label>
+            Player 2: <input id="player2Name"  />
+        </label><br>
+        <button id="start" class="btn btn-md btn-primary">Start</button>
+    </div>
+ 
+    <div style="display:none" id="gameBoard">
+    <div class="game-view">
+        <div><input id="block1" data-block="1" type="checkbox"/><label for="block1"></label> </div>
+        <div><input id="block2" data-block="2" type="checkbox"/><label for="block2"></label> </div>
+        <div><input id="block3" data-block="3" type="checkbox"/><label for="block3"></label> </div>
+        <div><input id="block4" data-block="4" type="checkbox"/><label for="block4"></label> </div>
+        <div><input id="block5" data-block="5" type="checkbox"/><label for="block5"></label> </div>
+        <div><input id="block6" data-block="6" type="checkbox"/><label for="block6"></label> </div>
+        <div><input id="block7" data-block="7" type="checkbox"/><label for="block7"></label> </div>
+        <div><input id="block8" data-block="8" type="checkbox"/><label for="block8"></label> </div>
+        <div><input id="block9" data-block="9" type="checkbox"/><label for="block9"></label> </div>
+    </div>
+    <center><button id="restart-game">Reset</button>
+    <button id="end-game">End Game</button>
+    <div>
+        Current Player:<span class="current-player"></span>
+    </div>
+</center>
+
+</div>
+   <div class="container">
+       <center>
+           <table class="table table-responsive" style="width:350px;text-align:center">
+               <thead>
+                    <tr>
+                         <th>Players Name</th>
+                        <th>Scores</th>
+                    </tr>
+               </thead>
+               <tbody id="scoreboard">
+                   
+               </tbody>
+           </table>
+       </center>
+    </div>
+    <script src="js/app.js" type="module"></script>
+    
+</body>
+
+</html>
